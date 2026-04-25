@@ -520,8 +520,9 @@
   <!-- PWA Installation Script -->
   <script>
     // Manifest content (created inline since we can't create separate files)
+    const iconUrl = new URL('./assets/1m.png', location.href).href;
     const manifest = {
-      "name": "Lee G ifts And Letters",
+      "name": "Lee Gifts And Letters",
       "short_name": "Lee Gifts And Letters",
       "description": "3D Slider",
       "start_url": "./",
@@ -531,13 +532,13 @@
       "orientation": "portrait",
       "icons": [
         {
-          "src": "./assets/1m.png",
+          "src": iconUrl,
           "sizes": "192x192",
           "type": "image/png",
           "purpose": "any maskable"
         },
         {
-          "src": "./assets/1m.png",
+          "src": iconUrl,
           "sizes": "512x512",
           "type": "image/png",
           "purpose": "any maskable"
